@@ -43,8 +43,17 @@ Short missing stretches were forward-filled only within the same sensor and cont
 ### 6. Feature engineering
 I added time-based features and 1-hour rolling mean features to support downstream modeling.
 
-## Key Visuals
-![Example figure](figures/example-plot.png)
+## EDA Highlights
+
+### pH Distribution by Sensor
+This histogram compares the distribution of pH readings across the two sensors. It helps show overall range, central tendency, and potential differences in sensor behavior.
+
+![pH Distribution by Sensor](figures/ph-distribution-by-sensor.png)
+
+### Sensor 1 pH Over Time
+This time-series plot shows how pH readings from Sensor 1 changed over time, including periods of instability, abrupt drops, and gaps that informed the cleaning and segmentation strategy.
+
+![Sensor 1 pH Over Time](figures/sensor1-ph-over-time.png)
 
 ## Tools Used
 Python, pandas, matplotlib, seaborn, Jupyter Notebook
